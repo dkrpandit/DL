@@ -19,7 +19,7 @@ def mse_loss():
 optimizer = tf.keras.optimizers.Adam()
 
 # Iterations
-for step in range(10000):
+for step in range(5000):
     with tf.GradientTape() as tape:  # Track the gradients
         loss = mse_loss()  # Compute the loss
     gradients = tape.gradient(loss, [W, b])  # Compute gradients of W and b
